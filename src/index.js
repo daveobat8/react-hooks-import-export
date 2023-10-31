@@ -1,5 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ColoradoStateParks from "./ColoradoStateParks";
+import MesaVerde from "./parks/MesaVerde";
+import RockyMountain from "./parks/RockyMountain";
 
-ReactDOM.render(<ColoradoStateParks />, document.getElementById("root"));
+
+function index() {
+  return (
+    <div>
+        <ColoradoStateParks />
+        <MesaVerde/>
+        <RockyMountain/>
+    </div>
+  )
+}
+
+export default index
+ReactDOM.render(index(), document.getElementById("root"));

@@ -1,3 +1,4 @@
+import React from 'react'
 const trees = "Aspen and Pine";
 
 function wildlife() {
@@ -9,3 +10,17 @@ function elevation() {
 }
 
 export { trees, wildlife };
+
+
+function RockyMountain() {
+  elevation();
+  wildlife();
+
+  return (
+    <div>
+     <h1>RockyMountain</h1> 
+    </div>
+  )
+}
+
+export default RockyMountain
